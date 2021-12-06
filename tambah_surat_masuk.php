@@ -203,17 +203,17 @@
                             <?php
                             echo '<input id="no_agenda" type="number" class="validate" name="no_agenda" value="';
                                 $sql = mysqli_query($config, "SELECT no_agenda FROM tbl_surat_masuk");
-                                $no_agenda = "72190297";
+                                $username = "72190297";
                                 if (mysqli_num_rows($sql) == 0){
-                                    echo $no_agenda;
+                                    echo $username;
                                 }
 
                                 $result = mysqli_num_rows($sql);
                                 $counter = 0;
                                 while(list($no_agenda) = mysqli_fetch_array($sql)){
                                     if (++$counter == $result) {
-                                        $username++;
-                                        echo $no_agenda;
+                                        $no_agenda++;
+                                        echo $username;
                                     }
                                   
                                 } 
@@ -221,7 +221,7 @@
                                 $counter = 0;
                                 while(list($nkode) = mysqli_fetch_array($sql)){
                                     if (++$counter == $result) {
-                                        $username++;
+                                        $no_agenda++;
                                         echo $nkode;
                                     }
                                   
@@ -246,8 +246,10 @@
                                         echo '<div id="alert-message" class="callout bottom z-depth-1 red lighten-4 red-text">'.$kode.'</div>';
                                         unset($_SESSION['kode']);
                                     }
+                                    $kode = "I Komang Aditya Abimanyu";
+                                    echo $kode;
                                 ?>
-                            <label for="kode">NAMA</label>
+                            <label for="kode">NAMA</label>    
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">place</i>
