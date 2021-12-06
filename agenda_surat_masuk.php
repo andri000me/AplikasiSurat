@@ -147,15 +147,15 @@
                         <table class="bordered" id="tbl" width="100%">
                             <thead class="blue lighten-4">
                                 <tr>
-                                    <th width="3%">No INDUK</th>
-                                    <th width="5%">Kode</th>
-                                    <th width="21%">Isi Ringkas</th>
-                                    <th width="18%">Asal Surat</th>
-                                    <th width="15%">Nomor Surat</th>
+                                    <th width="3%">NIM/NIK</th>
+                                    <th width="5%">Tujuan</th>
+                                    <th width="21%">Asal Surat</th>
+                                    <th width="18%">Isi Surat</th>
+                                    <th width="15%">Tanggal Pelaksanaan</th>
                                     <th width="8%">Tanggal<br/> Surat</th>
-                                    <th width="8%">Tanggal Diterima</th>
+                                    <th width="8%">Nama</th>
                                     <th width="10%">Penerima</th>
-                                    <th width="10%">Paraf</th>
+                                    <th width="10%">Isi Ringkas</th>
                                     <th width="10%">Aksi</th>
                                 </tr>
                             </thead>
