@@ -210,7 +210,12 @@
 
                                 $result = mysqli_num_rows($sql);
                                 $counter = 0;
-                               
+                                while(list($no_agenda) = mysqli_fetch_array($sql)){
+                                    if (++$counter == $result) {
+                                        $no_agenda++;
+                                        echo $no_agenda;
+                                    }
+                                }
                                 echo '" required>';
 
                                 if(isset($_SESSION['no_agenda'])){
