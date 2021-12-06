@@ -177,7 +177,7 @@
                     <table>
                         <tbody>
                         <tr>
-                        <p style="text-align: center;"><strong><u>S U R A T T U G A S </u></strong></p>
+                        <p style="text-align: center;"><strong><u>S U R A T  T U G A S </u></strong></p>
                         <p style="text-align: justify;">Sehubungan dengan permintaan dari sentra I Komang Aditya Abimanyu untuk ini dekan Fakultas Teknologi Informasi Universitas Kristen Duta Wacana Yogyakarta memberikan tugas kepada dosen tersebut di bawah ini  :</p>
                         <p id="left" width="25">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNama : '.$row['kode'].'</p>
                         <p id="left" width="25">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNim/Nik : '.$row['no_agenda'].'</p>

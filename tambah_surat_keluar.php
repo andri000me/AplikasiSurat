@@ -242,7 +242,6 @@
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">looks_two</i>
-                            <input id="no_surat" type="text" class="validate" name="no_surat" required>
                                 <?php
                                     if(isset($_SESSION['no_suratk'])){
                                         $no_suratk = $_SESSION['no_suratk'];
@@ -255,7 +254,13 @@
                                         unset($_SESSION['errDup']);
                                     }
                                 ?>
-                            <label for="no_surat">Jenis Surat</label>
+                            <label for="no_surat">Jenis Surat</label><br>
+                            <div class="col-md-4">
+                                <select id="no_surat" class="form-select" name="no_surat" required>
+                                <option>Surat Ijin KP</option>
+                                <option>Surat Keterangan</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">date_range</i>

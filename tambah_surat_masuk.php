@@ -198,12 +198,12 @@
 
                     <!-- Row in form START -->
                     <div class="row">
-                        <div class="input-field col s6">
+                    <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">looks_one</i>
                             <?php
                             echo '<input id="no_agenda" type="number" class="validate" name="no_agenda" value="';
                                 $sql = mysqli_query($config, "SELECT no_agenda FROM tbl_surat_masuk");
-                                $no_agenda = "1";
+                                $no_agenda = "72190297";
                                 if (mysqli_num_rows($sql) == 0){
                                     echo $no_agenda;
                                 }
@@ -212,10 +212,21 @@
                                 $counter = 0;
                                 while(list($no_agenda) = mysqli_fetch_array($sql)){
                                     if (++$counter == $result) {
-                                        $no_agenda++;
+                                        $username++;
                                         echo $no_agenda;
                                     }
+                                  
+                                } 
+                                $result = mysqli_num_rows($sql);
+                                $counter = 0;
+                                while(list($nkode) = mysqli_fetch_array($sql)){
+                                    if (++$counter == $result) {
+                                        $username++;
+                                        echo $nkode;
+                                    }
+                                  
                                 }
+                               
                                 echo '" required>';
 
                                 if(isset($_SESSION['no_agenda'])){
@@ -252,7 +263,7 @@
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">storage</i>
-                            <input id="indeks" type="text" class="validate" name="indeks" required>
+                            
                                 <?php
                                     if(isset($_SESSION['indeks'])){
                                         $indeks = $_SESSION['indeks'];
@@ -260,7 +271,13 @@
                                         unset($_SESSION['indeks']);
                                     }
                                 ?>
-                            <label for="indeks">Jenis Surat</label>
+                            <label for="indeks">Pilih Jenis Surat</label><br>
+                            <div class="col-md-4">
+                                <select id="indeks" class="form-select" name="indeks" required>
+                                <option>Surat Ijin KP</option>
+                                <option>Surat Keterangan</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">looks_two</i>
