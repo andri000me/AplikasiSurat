@@ -246,10 +246,9 @@
                                         echo '<div id="alert-message" class="callout bottom z-depth-1 red lighten-4 red-text">'.$kode.'</div>';
                                         unset($_SESSION['kode']);
                                     }
-                                    $kode = "I Komang Aditya Abimanyu";
-                                    echo $kode;
+                                 
                                 ?>
-                            <label for="kode">NAMA</label>    
+                            <label for="kode">Nama</label>    
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">place</i>
