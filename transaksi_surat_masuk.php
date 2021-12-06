@@ -140,7 +140,7 @@
                             <thead class="blue lighten-4" id="head">
                                 <tr>
                                     <th width="10%">No. Induk<br/>Kode</th>
-                                    <th width="30%">Isi Ringkas<br/> File</th>
+                                    <th width="30%">Isi Ringkas</th>
                                     <th width="24%">Asal Surat</th>
                                     <th width="18%">No. Surat<br/>Tgl Surat</th>
                                     <th width="18%">Tindakan <span class="right"><i class="material-icons" style="color: #333;">settings</i></span></th>
@@ -199,7 +199,7 @@
                                 <thead class="blue lighten-4" id="head">
                                     <tr>
                                         <th width="10%">NIM / Nik<br/>NAMA</th>
-                                        <th width="30%">Isi Surat<br/> File</th>
+                                        <th width="30%">Isi Surat</th>
                                         <th width="24%">Asal Surat</th>
                                         <th width="18%">Tgl Surat</th>
                                         <th width="18%">Tindakan <span class="right tooltipped" data-position="left" data-tooltip="Atur jumlah data yang ditampilkan"><a class="modal-trigger" href="#modal"><i class="material-icons" style="color: #333;">settings</i></a></span></th>
