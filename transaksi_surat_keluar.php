@@ -266,10 +266,13 @@
                                         echo '<button class="btn small blue-grey waves-effect waves-light"><i class="material-icons">error</i> No Action</button>';
                                     } else {
                                       echo '<a class="btn small blue waves-effect waves-light" href="?page=tsk&act=edit&id_surat='.$row['id_surat'].'">
-                                                <i class="material-icons">edit</i> EDIT</a>
+                                                <i class="material-icons">edit</i>EDIT</a>
                                             <a class="btn small deep-orange waves-effect waves-light" href="?page=tsk&act=del&id_surat='.$row['id_surat'].'">
                                                 <i class="material-icons">delete</i> DEL</a>';
                                     } echo '
+                                    </td>
+                                    <td class="project-state">
+                                        <span class="badge badge-success">Success</span>
                                     </td>
                                 </tr>';
                                 }
