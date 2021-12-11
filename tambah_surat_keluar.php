@@ -259,6 +259,9 @@
                                 <select id="no_surat" class="form-select" name="no_surat" required>
                                 <option>Surat Ijin KP</option>
                                 <option>Surat Keterangan</option>
+                                <option>Surat Berita</option>
+                                <option>Surat Personalia</option>
+                                <option>Surat Tugas</option>
                                 </select>
                             </div>
                         </div>
