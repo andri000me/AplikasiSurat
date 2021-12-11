@@ -25,7 +25,9 @@
                     case 'disp':
                         include "disposisi.php";
                         break;
-                    
+                    case 'print':
+                        include "cetak_disposisi.php";
+                        break;
                     case 'del':
                         include "hapus_surat_masuk.php";
                         break;
@@ -55,9 +57,7 @@
                                     <div class="col m7">
                                         <ul class="left">
                                             <li class="waves-effect waves-light hide-on-small-only"><a href="?page=tsm" class="judul"><i class="material-icons">mail</i> Surat Masuk</a></li>
-                                            <li class="waves-effect waves-light">
-                                                <a href="?page=tsm&act=add"><i class="material-icons md-24">add_circle</i> Tambah Data</a>
-                                            </li>
+                                            
                                         </ul>
                                     </div>
                                     <div class="col m5 hide-on-med-and-down">

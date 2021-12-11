@@ -258,7 +258,7 @@
                                         unset($_SESSION['easal_surat']);
                                     }
                                 ?>
-                            <label for="asal_surat">Asal Surat</label>
+                            <label for="asal_surat">Asal Sura</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">storage</i>
@@ -296,6 +296,7 @@
                                 ?>
                             <label for="tgl_surat">Tanggal Surat</label>
                         </div>
+                        
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">description</i>
                             <textarea id="isi" class="materialize-textarea validate" name="isi" required><?php echo $isi ;?></textarea>
