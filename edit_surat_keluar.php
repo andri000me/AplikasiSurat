@@ -227,7 +227,7 @@
                                             unset($_SESSION['no_agendak']);
                                         }
                                     ?>
-                                <label for="no_agenda">Nomor Agenda</label>
+                                <label for="no_agenda">NIM / NIK</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix md-prefix">bookmark</i>
@@ -239,7 +239,7 @@
                                             unset($_SESSION['kodek']);
                                         }
                                     ?>
-                                <label for="kode">Kode Klasifikasi</label>
+                                <label for="kode">Nama</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix md-prefix">place</i>
@@ -263,7 +263,7 @@
                                             unset($_SESSION['no_suratk']);
                                         }
                                     ?>
-                                <label for="no_surat">Nomor Surat</label>
+                                <label for="no_surat">Jenis Surat</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix md-prefix">date_range</i>
@@ -299,33 +299,9 @@
                                             unset($_SESSION['isik']);
                                         }
                                     ?>
-                                <label for="isi">Isi Ringkas</label>
+                                <label for="isi">Isi Surat</label>
                             </div>
-                            <div class="input-field col s6">
-                                <div class="file-field input-field">
-                                    <div class="btn light-green darken-1">
-                                        <span>File</span>
-                                        <input type="file" id="file" name="file">
-                                    </div>
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text" value="<?php echo $file ;?>" placeholder="Upload file/scan gambar surat keluar">
-                                            <?php
-                                                if(isset($_SESSION['errSize'])){
-                                                    $errSize = $_SESSION['errSize'];
-                                                    echo '<div id="alert-message" class="callout bottom z-depth-1 red lighten-4 red-text">'.$errSize.'</div>';
-                                                    unset($_SESSION['errSize']);
-                                                }
-                                                if(isset($_SESSION['errFormat'])){
-                                                    $errFormat = $_SESSION['errFormat'];
-                                                    echo '<div id="alert-message" class="callout bottom z-depth-1 red lighten-4 red-text">'.$errFormat.'</div>';
-                                                    unset($_SESSION['errFormat']);
-                                                }
-                                            ?>
-                                        <small class="red-text">*Format file yang diperbolehkan *.JPG, *.PNG, *.DOC, *.DOCX, *.PDF dan ukuran maksimal file 2 MB!</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                           
                         <!-- Row in form END -->
 
                         <div class="row">

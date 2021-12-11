@@ -190,7 +190,7 @@
                                     <th width="10%">NIM /<br/>NAMA</th>
                                     <th width="31%">Isi Surat</th>
                                     <th width="24%">Tujuan</th>
-                                    <th width="19%">No. Surat<br/>Tgl Surat</th>
+                                    <th width="19%">Jenis Surat<br/>Tgl Surat</th>
                                     <th width="16%">Tindakan </th>
                                     <th width="24%">Status</th>
                                     <th width="24%"><span class="right tooltipped" data-position="left" data-tooltip="Atur jumlah data yang ditampilkan"><a class="modal-trigger" href="#modal"><i class="material-icons" style="color: #333;">settings</i></a></span></th>
