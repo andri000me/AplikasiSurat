@@ -25,9 +25,7 @@
                     case 'disp':
                         include "disposisi.php";
                         break;
-                    case 'print':
-                        include "cetak_disposisi.php";
-                        break;
+                    
                     case 'del':
                         include "hapus_surat_masuk.php";
                         break;
