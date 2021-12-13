@@ -258,7 +258,7 @@
                                         unset($_SESSION['easal_surat']);
                                     }
                                 ?>
-                            <label for="asal_surat">Asal Sura</label>
+                            <label for="asal_surat">Asal Surat</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix md-prefix">storage</i>
