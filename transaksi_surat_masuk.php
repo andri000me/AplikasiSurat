@@ -57,7 +57,9 @@
                                     <div class="col m7">
                                         <ul class="left">
                                             <li class="waves-effect waves-light hide-on-small-only"><a href="?page=tsm" class="judul"><i class="material-icons">mail</i> Surat Masuk</a></li>
-                                            
+                                            <li class="waves-effect waves-light">
+                                                <a href="?page=tsm&act=add"><i class="material-icons md-24">add_circle</i> Tambah Data</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col m5 hide-on-med-and-down">
@@ -133,12 +135,13 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col m12" id="colres">
                         <table class="bordered" id="tbl">
                             <thead class="blue lighten-4" id="head">
                                 <tr>
                                     <th width="10%">No. Induk<br/>Kode</th>
-                                    <th width="30%">Isi Ringkas</th>
+                                    <th width="30%">Isi Ringkas<br/> File</th>
                                     <th width="24%">Asal Surat</th>
                                     <th width="18%">No. Surat<br/>Tgl Surat</th>
                                     <th width="18%">Tindakan <span class="right"><i class="material-icons" style="color: #333;">settings</i></span></th>
@@ -171,8 +174,6 @@
                                     } else {
                                       echo '<a class="btn small blue waves-effect waves-light" href="?page=tsm&act=edit&id_surat='.$row['id_surat'].'">
                                                 <i class="material-icons">edit</i> EDIT</a>
-                                            <a class="btn small light-green waves-effect waves-light tooltipped" data-position="left" data-tooltip="Pilih Disp untuk menambahkan Disposisi Surat" href="?page=tsm&act=disp&id_surat='.$row['id_surat'].'">
-                                                <i class="material-icons">description</i> DISP</a>
                                             <a class="btn small yellow darken-3 waves-effect waves-light" href="?page=ctk&id_surat='.$row['id_surat'].'" target="_blank">
                                                 <i class="material-icons">print</i> PRINT</a>
                                             <a class="btn small deep-orange waves-effect waves-light" href="?page=tsm&act=del&id_surat='.$row['id_surat'].'">
@@ -196,11 +197,12 @@
                             <table class="bordered" id="tbl">
                                 <thead class="blue lighten-4" id="head">
                                     <tr>
-                                        <th width="10%">NIM / Nik<br/>NAMA</th>
-                                        <th width="30%">Isi Surat</th>
+                                        <th width="10%">No. Induk<br/>Kode</th>
+                                        <th width="30%">Isi Ringkas<br/> File</th>
                                         <th width="24%">Asal Surat</th>
-                                        <th width="18%">Tgl Surat</th>
+                                        <th width="18%">No. Surat<br/>Tgl Surat</th>
                                         <th width="18%">Tindakan <span class="right tooltipped" data-position="left" data-tooltip="Atur jumlah data yang ditampilkan"><a class="modal-trigger" href="#modal"><i class="material-icons" style="color: #333;">settings</i></a></span></th>
+
                                             <div id="modal" class="modal">
                                                 <div class="modal-content white">
                                                     <h5>Jumlah data yang ditampilkan per halaman</h5>';
@@ -244,6 +246,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                     </tr>
                                 </thead>
                                 <tbody>';
@@ -264,7 +267,7 @@
                                             echo '<em>Tidak ada file yang di upload</em>';
                                         } echo '</td>
                                         <td>'.$row['asal_surat'].'</td>
-                                        <td>'.indoDate($row['tgl_surat']).'</td>
+                                        <td>'.$row['no_surat'].'<br/><hr/>'.indoDate($row['tgl_surat']).'</td>
                                         <td>';
 
                                         if($_SESSION['id_user'] != $row['id_user'] AND $_SESSION['id_user'] != 1){
@@ -273,7 +276,6 @@
                                         } else {
                                           echo '<a class="btn small blue waves-effect waves-light" href="?page=tsm&act=edit&id_surat='.$row['id_surat'].'">
                                                     <i class="material-icons">edit</i> EDIT</a>
-    
                                                 <a class="btn small yellow darken-3 waves-effect waves-light" href="?page=ctk&id_surat='.$row['id_surat'].'" target="_blank">
                                                     <i class="material-icons">print</i> PRINT</a>
                                                 <a class="btn small deep-orange waves-effect waves-light" href="?page=tsm&act=del&id_surat='.$row['id_surat'].'">
